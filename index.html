@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="A web page to learn all about Sally Student and her many wonderful qualifications">
+    <title>Sally Student resume</title>
+    <link href="main.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="application-root"></div>
+
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <script type="text/babel">
+        function App() { 
+            return <div>
+            <header>
+                <h1>Sally Student Resume</h1>
+            </header>
+            <main>
+                <section>
+                    <header>
+                        <h2>Contact Info</h2>
+                    </header>
+                    <address>
+                        <p>Name: Sally Student</p>
+                        <p>Email address: <a href={`mailto:sallystudent@gmail.com`}>sallystudent@gmail.com</a></p>
+                        <p>Phone number: 111-222-3333</p>
+                    </address>
+                    <p>Picture:</p>
+                    <img src={`https://m.media-amazon.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_.jpg`} 
+                            alt={`A picture of Sally Student`}/>
+                </section>
+                <section>
+                    <header>
+                    <h2>Education</h2>
+                    </header>
+                    <ul>
+                    <li>Thinkful: June 2015 - December 2015</li>
+                    <li>Harvard University: August 2011 - May 2015</li>
+                    </ul>
+                </section>
+                <section>
+                    <header>
+                        <h2>Employment History</h2>
+                    </header>
+                    <div>
+                        <p>Company Name: McDonald's</p>
+                        <p>Job Title: Lead Cashier</p>
+                        <p>Dates of Employment: December 2012 - May 2015</p>
+                        <p>Job Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam viverra aliquet ornare. Aliquam quis accumsan lacus. Curabitur non tortor vitae enim viverra condimentum id id est. Aenean viverra vel arcu sit amet vulputate. Aliquam vehicula semper nibh at finibus. Nulla tempus accumsan semper. Vestibulum nisl arcu, auctor quis tempus at, eleifend sed tortor.</p>
+                    </div>
+                    <div>
+                        <p>Company Name: Wal-Mart</p>
+                        <p>Job Title: Night Stocker</p>
+                        <p>Dates of Employment: August 2011 - December 2012</p>
+                        <p>Job Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam viverra aliquet ornare. Aliquam quis accumsan lacus. Curabitur non tortor vitae enim viverra condimentum id id est. Aenean viverra vel arcu sit amet vulputate. Aliquam vehicula semper nibh at finibus. Nulla tempus accumsan semper. Vestibulum nisl arcu, auctor quis tempus at, eleifend sed tortor.</p>
+                    </div>
+                </section>
+            </main>
+            </div> 
+        };
+
+        ReactDOM.render(
+            <App />,
+            document.querySelector('#application-root')
+        );
+    </script>
+  </body>
+</html>
